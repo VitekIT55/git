@@ -3,7 +3,6 @@ class Dessert:
         self.name = None
         self.cl = None
 
-#    @staticmethod
     def setnamecl(self, name, cl):
         self.name = name
         self.cl = cl
@@ -25,10 +24,10 @@ class Dessert:
         return False
 
 
-ds = Dessert()
-ds.setnamecl(input('Name = '), int(input('Calories = ')))
-print(ds.getname(), 'is healthy:', ds.is_healthy())
-print(ds.getname(), 'is delicious:', ds.is_delicious())
+#ds = Dessert()
+#ds.setnamecl(input('Name = '), int(input('Calories = ')))
+#print(ds.getname(), 'is healthy:', ds.is_healthy())
+#print(ds.getname(), 'is delicious:', ds.is_delicious())
 #if ds.is_healthy():
 #    print(ds.getname(), 'is healthy')
 #else:

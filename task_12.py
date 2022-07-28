@@ -39,7 +39,7 @@ class Dessert(JellyBean, SetName):
         return True
 
 
-ds = Dessert()
-ds.setname(input('Name = '), int(input('Calories = ')), input('Flavor = '))
-print(ds.getname(), 'is healthy:', ds.is_healthy())
-print(ds.getname(), 'is delicious:', ds.is_delicious())
+#ds = Dessert()
+#ds.setname(input('Name = '), int(input('Calories = ')), input('Flavor = '))
+#print(ds.getname(), 'is healthy:', ds.is_healthy())
+#print(ds.getname(), 'is delicious:', ds.is_delicious())

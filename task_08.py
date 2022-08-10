@@ -1,4 +1,4 @@
-def multiply_numbers(inputs):
+def multiply_numbers(inputs=[]):
     inputs = list(str(inputs))
     inputsfix = []
     for i in range(len(inputs)):
@@ -13,3 +13,4 @@ def multiply_numbers(inputs):
             schet += 1
     if schet > 0:
         return otvet
+

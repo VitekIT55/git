@@ -1,6 +1,4 @@
-def coincidence(list, range):
-    if not list or not range:
-        return []
+def coincidence(list=[], range=()):
     a = []
     i = 0
     while i < len(list):
@@ -10,3 +8,4 @@ def coincidence(list, range):
         i += 1
     a.sort()
     return a
+

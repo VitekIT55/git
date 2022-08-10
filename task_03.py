@@ -3,8 +3,8 @@ def max_odd(array):
     for i in range(len(array)):
         if type(array[i]) == int or type(array[i]) == float:
             if array[i] / 2 != array[i] // 2:
-                schet = i
-                if array[i] >= array[schet]:
-                    chisl = array[schet]
-            if chisl != 0:
-                return int(chisl)
+                if array[i] >= chisl:
+                    chisl = array[i]
+    if chisl != 0:
+        return int(chisl)
+

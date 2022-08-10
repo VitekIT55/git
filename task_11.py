@@ -1,34 +1,25 @@
 class Dessert:
     def __init__(self):
         self.name = None
-        self.cl = None
+        self.calories = None
 
-    def setnamecl(self, name, cl):
+#    @staticmethod
+    def setnamecl(self, name, calories):
         self.name = name
-        self.cl = cl
+        self.calories = calories
 
     def getname(self):
         return self.name
 
-    def getcl(self):
-        return self.cl
+    def getcalories(self):
+        return self.calories
 
     def is_healthy(self):
-        if self.cl < 200:
+        if type(self.calories) == int and self.calories < 200:
             return True
         return False
 
     def is_delicious(self):
-        if self.cl >= 200:
+        if type(self.calories) == int and self.calories >= 200:
             return True
         return False
-
-
-#ds = Dessert()
-#ds.setnamecl(input('Name = '), int(input('Calories = ')))
-#print(ds.getname(), 'is healthy:', ds.is_healthy())
-#print(ds.getname(), 'is delicious:', ds.is_delicious())
-#if ds.is_healthy():
-#    print(ds.getname(), 'is healthy')
-#else:
-#    print(ds.getname(), 'is delicious')

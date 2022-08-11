@@ -21,7 +21,7 @@ class Dessert:
         return self.calories
 
     def is_healthy(self):
-        if type(self.calories) == int and self.calories < 200:
+        if (type(self.calories) == int or type(self.calories) == float) and self.calories < 200:
             return True
         return False
 
@@ -37,4 +37,3 @@ class JellyBean(Dessert, SetName):
         if self.flavor == 'black licorice':
             return False
         return True
-
